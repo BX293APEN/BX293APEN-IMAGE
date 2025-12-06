@@ -20,7 +20,7 @@ const path = require('path');
 
         const browser = await puppeteer.launch(
             {
-                args: ['--no-sandbox', '--disable-setuid-sandbox']
+                args: ['--no-sandbox', '--disable-setuid-sandbox', '--lang=ja-JP']
             }
         );
 
