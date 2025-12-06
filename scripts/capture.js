@@ -47,7 +47,7 @@ const path = require('path');
 
             await page.setContent(html);
 
-            const outName = `${path.basename(files[i], '.html')}_${w}x${h}.png`;
+            const outName = `${path.basename(files[i], '.html')}.png`;
             await page.screenshot({ path: path.join(dir, outName) });
 
             console.log(`Generated screenshot: ${outName}`);

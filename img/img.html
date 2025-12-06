@@ -1,65 +1,69 @@
-<div 
-    style="
-        box-sizing:border-box;
-        width:100%;
-        max-width:960px;
-        margin:24px auto;
-        padding:16px 20px;
-        border:1px solid #e5e7eb;
-        border-radius:12px;
-        background:#fff;
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        gap:10px;
-    "
->
+<!DOCTYPE html>
+<html lang="ja">
+    <meta charset="UTF-8" />
     <div 
         style="
-            flex:1 1 auto;
-            font-family:'Segoe UI','Hiragino Kaku Gothic ProN',Meiryo,'Noto Sans JP',sans-serif;
-            line-height:1.4;
-            color:#111827;
+            box-sizing:border-box;
+            width:100%;
+            max-width:960px;
+            margin:24px auto;
+            padding:16px 20px;
+            border:1px solid #e5e7eb;
+            border-radius:12px;
+            background:#fff;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:10px;
         "
     >
-        <div style="font-size:18px; font-weight:600; letter-spacing:0.02em;">
-            とあるペンギンの実験室
+        <div 
+            style="
+                flex:1 1 auto;
+                font-family:'Segoe UI','Hiragino Kaku Gothic ProN',Meiryo,'Noto Sans JP',sans-serif;
+                line-height:1.4;
+                color:#111827;
+            "
+        >
+            <div style="font-size:18px; font-weight:600; letter-spacing:0.02em;">
+                とあるペンギンの実験室
+            </div>
+            <div style="font-size:22px; font-weight:600; letter-spacing:0.02em; color:#1f6feb;">
+                とあるペンギンの実験室
+            </div>
+            <div style="font-size:14px; font-weight:600; letter-spacing:0.01em; color:#374151; margin-top:4px;">
+                PENの実験室
+            </div>
         </div>
-        <div style="font-size:22px; font-weight:600; letter-spacing:0.02em; color:#1f6feb;">
-            とあるペンギンの実験室
-        </div>
-        <div style="font-size:14px; font-weight:600; letter-spacing:0.01em; color:#374151; margin-top:4px;">
-            PENの実験室
-        </div>
+
+        <img src="https://bx293apen.github.io/img/PEN.png" style="flex:0 0 auto; width:120px; height:120px;">
     </div>
 
-    <img src="https://bx293apen.github.io/img/PEN.png" style="flex:0 0 auto; width:120px; height:120px;">
-</div>
-
-<!-- モバイル対応：縦並び -->
-<style>
-@media (max-width: 600px) {
-  div[style*="justify-content:space-between"] {
-    flex-direction:column;
-    text-align:left;
-  }
-  div[style*="justify-content:space-between"] > div:last-child {
-    width:88px !important;
-    height:88px !important;
-    align-self:flex-end;
-  }
-  div[style*="justify-content:space-between"] svg {
-    width:88px !important;
-    height:88px !important;
-  }
-}
-</style>
-
-<script>
-    function logWindowSize() {
-        console.log(`width: ${window.innerWidth}, height: ${window.innerHeight}`);
+    <!-- モバイル対応：縦並び -->
+    <style>
+    @media (max-width: 600px) {
+      div[style*="justify-content:space-between"] {
+        flex-direction:column;
+        text-align:left;
+      }
+      div[style*="justify-content:space-between"] > div:last-child {
+        width:88px !important;
+        height:88px !important;
+        align-self:flex-end;
+      }
+      div[style*="justify-content:space-between"] svg {
+        width:88px !important;
+        height:88px !important;
+      }
     }
+    </style>
 
-    logWindowSize();
-    window.addEventListener('resize', logWindowSize);
-</script>
+    <script>
+        function logWindowSize() {
+            console.log(`width: ${window.innerWidth}, height: ${window.innerHeight}`);
+        }
+
+        logWindowSize();
+        window.addEventListener('resize', logWindowSize);
+    </script>
+</html>
