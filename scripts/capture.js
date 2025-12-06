@@ -53,6 +53,7 @@ const path = require('path');
             console.log(`Generated screenshot: ${outName}`);
             
         }
+        
         await browser.close();
     }
 )();
