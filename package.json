@@ -1,0 +1,10 @@
+{
+    "name": "github-actions-image",
+    "version": "1.0.0",
+    "scripts": {
+        "capture": "node scripts/capture.js"
+    },
+    "dependencies": {
+        "puppeteer": "^22.0.0"
+    }
+}
