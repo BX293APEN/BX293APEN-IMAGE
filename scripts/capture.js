@@ -15,7 +15,7 @@ const path = require('path');
         const heights = [190, 600, 720];
 
         // img/ ディレクトリ内のHTMLファイル一覧
-        const htmlDir = path.join(__dirname, './img');
+        const htmlDir = path.join(__dirname, '../img');
         const files = fs.readdirSync(htmlDir).filter(file => file.endsWith('.html'));
 
         const browser = await puppeteer.launch(
